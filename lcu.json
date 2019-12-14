@@ -1,0 +1,14 @@
+{
+  "templates": {
+    "repository": "lowcodeunit-devkit/lcu-cli-templates-core",
+    "scope": "@fathym-it",
+    "workspace": "nicolos-pizza"
+  },
+  "config": {
+    "wc": ["wc/nicolos-pizza.lcu.js"],
+    "solutions": {},
+    "elements": {},
+    "data-flow": {},
+    "dependencies": {}
+  }
+}

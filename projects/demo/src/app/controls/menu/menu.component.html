@@ -1,0 +1,933 @@
+
+	<script type="text/javascript">
+	
+    var appInsights=window.appInsights||function(a){
+        function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
+    }({
+        instrumentationKey: '396307c2-279b-45ff-8d0b-cb5986dd0fcb'
+    });
+
+    window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
+	
+    </script>
+    <script src="./menu_files/ai.0.js.download"></script>
+    <body>
+     <header>
+	<div class="info" fxlayout="row" fxlayoutalign="center stretch" style="flex-direction: row; box-sizing: border-box; display: flex; max-height: 100%; place-content: stretch center; align-items: stretch;">
+		<div fxflex="10%" fxhide="false" fxhide.sm="true" fxhide.xs="true" style="flex: 1 1 100%; box-sizing: border-box; max-width: 10%; display: block;"></div>
+
+		<div class="img" fxflex="30%" fxflex.xs="45%" style="flex: 1 1 100%; box-sizing: border-box; max-width: 30%;">
+			<a routerlink="/" href="http://www.nicolosdenver.pizza/">
+				<img class="mobile img-fluid" fxhide="true" fxhide.sm="false" fxhide.xs="false" src="./menu_files/logo.png" style="display: none;">
+
+				<img class="desktop img-fluid" fxhide="false" fxhide.sm="true" fxhide.xs="true" src="./menu_files/logo.png" style="display: inline;">
+			</a>
+		</div>
+
+		<div class="diagonals" fxflex="70%" fxhide="false" fxhide.sm="true" fxhide.xs="true" style="flex: 1 1 100%; box-sizing: border-box; max-width: 70%; display: block;">
+
+		</div>
+	</div>
+
+	<div class="menu">
+		<ul>
+			<li>
+				<a f-insight="GrubHub" href="https://www.grubhub.com/r/w/20730/denver/nicolos-chicago-style-pizza-denver/" section="Header" target="_blank">
+					Order Online
+				</a>
+			</li>
+
+			<li>
+				<a f-insight="Menu" href="http://www.nicolosdenver.pizza/menu" section="Header">Menu</a>
+			</li>
+
+			<li>
+				
+				<a routerlink="/" href="http://www.nicolosdenver.pizza/">Location</a>
+			</li>
+		</ul>
+	</div>
+
+</header>
+
+<router-outlet></router-outlet>
+<mat-card class="hero mat-card">
+	<div class="description" fxlayout="row" fxlayoutalign="center center" style="flex-direction: row; box-sizing: border-box; display: flex; max-height: 100%; place-content: center; align-items: center;">
+		<div fxflex="100%" style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%;">
+			<div fxlayout="row" fxlayoutalign="center stretch" style="flex-direction: row; box-sizing: border-box; display: flex; max-height: 100%; place-content: stretch center; align-items: stretch;">
+				<div class="food-menu" fxflex="100%" style="flex: 1 1 100%; box-sizing: border-box; max-width: 100%;">
+
+                    <div class="title">
+                        <h1>Let's Get Started...</h1>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Killer Garlic Bread</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>Served with a side of marinara. <br>
+                        <span class="price">$4.25</span> <span class="price-description"> w/cheese </span><span class="price"> $5.75</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>The Mile High Fry</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Zucchini, ‘shrooms, and some peppers, deep fried in a light breading and
+                            served with our signature cool ranch dressing. <br>
+                            <span class="price">$9</span>
+                        </p>
+                    </div>
+
+
+                    <div class="subtitle">
+                        <h3>Fried Motz</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            We hand bread our mozzarella cheese, fry it, and serve it with marinara. A great
+                            way to start your meal. <br>
+                            <span class="price">$8</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Polenta Fries</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            What else do we need to say? Enjoy these perfect crunchy sticks with housemade
+                            creamy sriracha sauce. <br>
+                            <span class="price">$8</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Dirty Tortellini</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            You think you’ve had tortellini before, but not like this. We toss the
+                            tortellini in your choice of buffalo sauce (see wing section), sprinkle with romano and serve
+                            it up with our cool ranch dressing. That’s the way, uh huh, uh huh, we like it.  <br>
+                            <span class="price">$9</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Garlic-Me-Knots</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Twisted bread, tossed in garlic butter and pecorino romano, served with a
+                            side of pizza sauce…one is KNOT enough! <br>
+                            <span class="price">$8</span>
+                        </p>
+                    </div>
+
+                    <div class="title">
+                        <h1>Let's Wing It!</h1>
+                    </div>
+
+                    <div class="title-description">
+                        <h4> Choose from our house-made gourment wing sauces.</h4> 
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Buffalo Style Wings</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Not your New York buffalo sauce, but a home-on-the-range version.We
+                            start with fresh roasted peppers, onions, garlic and vinegar, and have created 4 spice levels
+                            (cuz we like to make everyone happy). <br>
+                        </p>
+                        <hr>
+                        <p>    
+                            The Don (Ex Hot) | The Boss (Hot) | The Muscle (Medium) | The Son-In-Law (Mild) <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Pomegranate Chipoltle</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Sweet and smoky hot. The kind of heat that sticks with you for
+                            a minute, but not overpowering. You'll be craving more. (Hot) <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>No Way Jose</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Travel south of the border and enjoy this blend of Tequila, hot sauce, and a hint of lime. This is a clear staff favorite! (Hot) <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Passion Fruit Habenero</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            UMMM, it really does explain itself. The epitome of sweet
+                            and spicy. (Ex Hot) <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+                    
+                    <div class="subtitle">
+                        <h3>Honey Barbie Q</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Take a shot at this one. (Mild)<br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Scorching Barbie Q</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            For those of you who love the south, a spicy version with the
+                            same Barbie Q flavor. (Hot)<br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Honey Hot</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Let’s say honey and The Boss had a love connection…let’s just say. (Hot)<br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Tasty Teriyaki</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            If you are a fan of classic Teriyaki sauce, these wings are made for you. (Mild)<br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Besto Pesto</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            You’ve never had a wing like this, dipped in pesto and rolled in Romano
+                            cheese. It makes all the other wings green with envy. (Mild)<br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Thai Peanut</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            The combo of creamy peanut and asian flavors are sure to make your mouth
+                            smile. You won’t believe it until you Thai it! (Medium)<br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Cheesy Garlic</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            These wings are drenched in garlic butter and coated with pecorino Romano
+                            cheese. Worth every tantalizing bite, and it keeps the vampires at bay. (Mild)<br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="title">
+                        <h1>Think Green... Eat Salad</h1>
+                    </div>
+
+                    <div class="title-description">
+                        <h4>Choose from our house made dressings: Italian, Ranch, Bleu Cheese, Caesar or Smoked Tomato Vinaigrette.</h4>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Bring Down The House Salad</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            This is not your typical house salad. We start with arugula,
+                            spinach and romaine then add carrots, cucumbers, celery, cherry tomatoes and croutons.<br>
+                            <span class="price-description"> Small </span><span class="price">$5</span> <span class="price-description"> Large </span><span class="price"> $9</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Hail To Our Caesar Salad</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            We made Julius proud with this interpretation of his signature salad.
+                            Starring romaine lettuce, house-made croutons and pecorino romano. Seize this salad! <br>
+                            <span class="price-description"> Small </span><span class="price">$5</span> <span class="price-description"> Large </span><span class="price"> $9</span><span class="price-description"> Add Chicken </span><span class="price">1/2</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>The MOBB</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            House mixed greens, bacon, chicken, cherry tomatoes, chopped eggs and bleu
+                            cheese. Fuggeddaboutit!<br>
+                            <span class="price">$12</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>My Big Fat Greek Salad</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            All of the best ingredients make for a perfect family of flavors.
+                            Our Greek includes a mound of romaine lettuce topped with marinated artichoke hearts, cherry
+                            tomatoes, cucumbers, green olives and feta. Just say “I do.” <br>
+                            <span class="price"> $12</span><span class="price-description"> Add Chicken </span><span class="price">$2</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>The Auntie-Pasti</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            I bet you didn’t know my Auntie Pasti, but years ago she created this salad of
+                            mozzarella, provolone, pepperoni, ham, fennel sausage, banana peppers, sun dried tomatoes and
+                            black olives piled on a bed of romaine lettuce. Uncle Luigi says “magnifico.” <br>
+                            <span class="price">$12</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Wing It Salad</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            All the great flavors of wings without the guilt. We start with mixed greens, then add
+                            carrots, celery, red onion and bleu cheese crumbles. Then choose your favorite wing sauce to coat your
+                            oven roasted chicken. <br>
+                            <span class="price">$12</span>
+                        </p>
+                    </div>
+
+                    <div class="title">
+                        <h1>Gigantic Slices</h1>
+                    </div>
+
+                    <div class="title-description">
+                        <h4>Walk In Only.</h4>
+                    </div>
+
+                    <p>Pick Your Toppings</p>
+                    <p><span class="price-description">Slice Of Cheese</span><span class="price"> $4.50</span><span class="price-description"> Toppings</span><span class="price"> .75</span><span class="price-description"> each.</span></p>
+                    <div class="food-menu-options"> 
+                        <p>
+                            Sausage, hamburger, ham, meatball, pepperoni, chicken, anchovy, bacon,
+                            bleu cheese, feta, ricotta, ‘shrooms, red onion, roma tomato, fresh spinach,
+                            basil, garlic, fresh pineapple, green pepper, black olives, green olives,
+                            banana peppers, jalapenos, artichoke hearts, green chiles, sun dried
+                            tomato, carrot, and cilantro
+                        </p>
+                    </div>
+
+                    <div class="title">
+                        <h1>Try A Specialty Pizza Or Calzone</h1>
+                    </div>
+
+                    <div class="title-description">
+                        <h4>
+                            Don’t want to do the thinking? We have done it for
+                            you! Try one of our specialty pizzas or calzones.<br>
+                            *Gluten Free Available
+                        </h4>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>EBA</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Everything. But. Anchovy. – need we say more? This pie includes red sauce, Italian
+                            sausage, pepperoni, mushrooms, onion, green pepper, and black olives. Want some extra
+                            heat? Add jalapenos for a kick.  <br>
+                            <span class="price">10”* $15 | 14” $20 | 16” $24 | 10” Deep $23 | 14” Deep $28 | Calzone $14</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Meat Me At Nicolo's</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            For those of you that are carnivores, this pizza is for you. Loaded with
+                            pepperoni, ham, sausage, meatballs and ground beef…don’t worry, we top it with pizza sauce
+                            and cheese too. <br>
+                            <span class="price">10”* $15 | 14” $20 | 16” $24 | 10” Deep $23 | 14” Deep $28 | Calzone $14</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>What's The Skinny</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            ‘Shrooms, onion, green pepper, black olives, fresh tomatoes, pizza
+                            sauce and just enough cheese. Dining out without the guilt. <br>
+                            <span class="price">10”* $15 | 14” $20 | 16” $24 | 10” Deep $23 | 14” Deep $28 | Calzone $14</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Besto Pesto With Chicken</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            This pizza has pesto sauce, chicken, black olives, artichoke
+                            hearts, and provolone cheese. Go Green! <br>
+                            <span class="price">10”* $15 | 14” $20 | 16” $24 | Calzone $14</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Sister Mary Margherita</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            This should be considered a sin with mass appeal.
+                            EVOO, fresh basil, roma tomatoes, garlic and provolone. Amen <br>
+                            <span class="price">10”* $11.50 | 14” $15.50 | 16” $19 | Calzone $10.50</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Don't Be Alfredo</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Creamy white cheese sauce, chicken, mushrooms and onions. We dare you. <br>
+                            <span class="price">10”* $15 | 14” $20 | 16” $24 | Calzone $14</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Barbie Q Chicken</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            This sweet American iconic pizza includes onion, provolone, cilantro,
+                            pineapple, chicken and your choice of Honey or Scorching Barbie Q sauce. Barbie dumped Ken for
+                            Nicolo in a hurry! <br>
+                            <span class="price">10”* $15 | 14” $20 | 16” $24 | Calzone $14</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Buffalo Pie (Pizza, That Is!)</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            No marinara here. We start with cool ranch dressing then top it with
+                            chicken, celery, carrots and mozzarella. Drizzle your choice of wing sauce on top. Feeling feisty? Add
+                            blue cheese crumbles for the total Buffalo experience. Wing it on!!  <br>
+                            <span class="price">10”* $15 | 14” $20 | 16” $24 | Calzone $14</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Get 'Em To The Greek</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            EVOO, garlic, green olive, sun dried tomato, spinach, artichoke, feta and
+                            mozzarella. Momma Mia! <br>
+                            <span class="price">10”* $15 | 14” $20 | 16” $24 | Calzone $14</span>
+                        </p>
+                    </div>
+
+                    <div class="title">
+                        <h1>Create Your Own Pizza Or Calzone!</h1>
+                    </div>
+
+                    <div class="title-description">
+                        <h4>
+                            Each pizza and calzone is made with fresh house
+                            made dough, individually crafted, and then baked
+                            in our authentic stone bottom oven. <br>
+                            14” Take &amp; Bakes Available for $2 Less Than 14” Pizzas
+                        </h4>
+                    </div>
+
+                    <div class="food-menu-options">
+                            <p>Step One: Pick Your Crust – thin square cut, original hand-rolled, or deepdish</p>
+                            <br>
+                            <p>Step Two: Pick Your Sauce – red pizza sauce, EVOO with garlic, alfredo sauce, Barbie Q, pesto, or any
+                            of our wing sauces.</p>
+                            <br>
+                            <p>Step Three: Pick Your Toppings – sausage, hamburger, ham, meatball, pepperoni, chicken, anchovy,
+                            bacon, bleu cheese, feta, ricotta, ‘shrooms, red onion, roma tomato, fresh spinach,
+                            basil, garlic, fresh pineapple, green pepper, black olives, green olives, banana peppers,
+                            jalapenos, artichoke hearts, green chiles, sun dried tomato, carrot, and cilantro</p>
+                    </div>
+
+                    <br>
+
+                    <p>
+                        <span class="price"> 10” | $10 | Additional Toppings $1.25</span>
+                        <br>
+                        <span class="price"> 14" | $14 | Additional Toppings $1.75</span>
+                        <br>
+                        <span class="price"> 16” | $16 | Additional Toppings $2.25</span>
+                        <br>
+                        <span class="price"> 10"* Deep Dish | $15 | Additional Toppings $1.75</span>
+                        <br>
+                        <span class="price"> 14”* Deep Dish| $19 | Additional Toppings $2.25</span>
+                        <br>
+                        <span class="price"> Calzone** | $10 | Additional Toppings $1.25</span>
+                    </p>
+
+                    <br>
+
+                    <div class="title-description">
+                        <h4>
+                            *Please Allow Extra Cook Time <br>
+                            **Pizza turnover with mozzarella, ricotta, and a side of sauce
+                        </h4>
+                    </div>
+
+                    <div class="title">
+                        <h1>Sandwiches</h1>
+                    </div>
+
+                    <div class="title-description">
+                        <h4>All sammies served on killer garlic bread.</h4>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Chicken Parma Johna</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Lightly breaded chicken breast baked with marinara and mozzarella. <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>What's Your Beef?</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Ours is Italian, slow braised top round thinly sliced and dipped in our tasty
+                            au jus, served with Giardiniera on our killer garlic bread.  <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Barbie Q Beef</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            We start with two pieces of Killer Garlic Bread and stack it high with our slow
+                            braised thinly sliced top round. Then we soak it in our house-made Barbie Q sauce, top it with
+                            onions, jalapenos and melted provolone. It’s a handful! <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Italian Sausage</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Move over Superman, this sandwich is the real hero. Oven roasted fennel
+                            sausage, banana peppers, marinara, finished with melted mozzarella. <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Meat-A-Ball-A-Sand-A-Wich</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            We lay house-made meatballs on our killer garlic bread then top
+                            it with marinara and provolone. Now That’s-A-Good! <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="title">
+                        <h1>Viva La Pasta</h1>
+                    </div>
+
+                    <div class="title-description">
+                        <h4>All entrees include a piece of killer garlic bread.</h4>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>On Top Of Spaghetti</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            A plate of angel hair spaghetti with your choice of marinara, meat sauce or
+                            tomato cream all covered with romano cheese. <br>
+                            <span class="price">$10</span> <br>
+                            <span class="price-description">And your choice of meatballs or sausage if you please.</span> <br>
+                            <span class="price">Add $3.50</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Fettuccine Alfredo</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            For all of you white sauce enthusiasts, this will certainly not disappoint. This
+                            dish is made-to-order with a creamy pecorino romano sauce and touch of lemon.
+                            Buon Appetito. <br>
+                            <span class="price">$12</span><span class="price-description"> Add Chicken</span><span class="price">$2</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Not So Teeny Tortellini</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            We pile fresh tortellini, sausage and spinach then smother it in tomato
+                            cream sauce and blanket it with melted mozzarella. <br>
+                            <span class="price">$12</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Besto Pesto Tortellini</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Fresh tortellini, sun dried tomato, artichoke hearts, black olives, and pesto.
+                            sauce <br>
+                            <span class="price">$12</span><span class="price-description"> Add Chicken</span><span class="price"> $2</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>The Mona Lisa</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            This masterpiece starts with breaded chicken breast served over spaghetti,
+                            topped with choice of marinara, meat sauce or tomato cream, covered with mozzarella cheese and
+                            baked to golden perfection. It made her smile and it will make you smile too. Wink.  <br>
+                            <span class="price">$13</span>
+                        </p>
+                    </div>
+
+                    <div class="title">
+                        <h1>P.T.L (Praise The Lasagna)</h1>
+                    </div>
+
+                    <div class="title-description">
+                        <h4>
+                            We make ‘em and bake ‘em,
+                            fresh to order. Carpe eat em’.
+                        </h4>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Nicolo's Classic</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Layers of fresh noodles, ricotta, ground beef, and mozzarella
+                            covered your choice of marinara, meat sauce or tomato cream.  <br>
+                            <span class="price">$15</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Veggie</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Layers of fresh noodles, ricotta, mozzarella, spinach, zucchini and your choice
+                            of marinara, meat sauce or tomato cream.  <br>
+                            <span class="price">$15</span>
+                        </p>
+                    </div>
+
+                    <div class="title">
+                        <h1>Kid's Menu</h1>
+                    </div>
+
+                    <div class="title-description">
+                        <h4>
+                            Includes drink. (Dine-in only)
+                        </h4>
+                    </div>
+
+                    <hr class="food-line">
+                    <p><span class="price">Chicken Nuggets $5 | Spaghetti $5 | Cheese Pizza $5 </span></p>
+
+                    <div class="title">
+                        <h1>A Sweet Ending</h1>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Half Baked</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            We take what would be a giant chocolate chip cookie, bake it 1/2 way until it’s crunchy
+                            on the outside, gooey on the inside and top it with vanilla ice cream.  <br>
+                            <span class="price">$10</span>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Holy Cannoli</h3>
+                    </div>
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Chocolate and ricotta in a crisp pastry <span class="price">$4.50</span> <br>
+                            Vanilla and pistachio ricotta in a crisp pastry <span class="price">$4.50</span>
+                        </p>
+                    </div>
+
+                    <div class="title">
+                        <h1>Beverages</h1>
+                    </div>
+
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Fountain drinks,
+                            Almost Frozen Draft Beers,
+                            Vino, and Mixed Drinks
+                            <span class="price">$2</span> <br>
+                        </p>
+                    </div>
+
+                    <div class="subtitle">
+                        <h3>Available For Takeout and Delivery</h3>
+                    </div>
+
+                    <hr class="food-line">
+                    <div class="food-description">
+                        <p>
+                            Coke, Diet Coke, Sprite,
+                            Bottled Water 
+                            <span class="price">$2</span> <br>
+                        </p>
+                    </div>
+
+                    <div class="food-description">
+                        <p>
+                            6 packs of Coke, Diet Coke,
+                            Sprite 
+                            <span class="price">$7</span> <br>
+                        </p>
+                    </div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</mat-card>
+
+
+<div address-type="Store" ng-reflect--address-type="Store" ng-reflect--map-key="AIzaSyAikICJsiPALVjGfgXroTCCK_" ng-reflect--phone-type="Contact" phone-type="Contact">
+    <div class="contact">
+        <mat-card class="title mat-card mat-card">
+            <h2>Contact Nicolo's Pizza</h2>
+        </mat-card>
+
+        <div class="details" fxlayout="row" fxlayoutalign="center center" fxlayoutwrap="wrap" ng-reflect-align="center center" ng-reflect-layout="row" ng-reflect-wrap="wrap" style="flex-flow: row wrap; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; box-sizing: border-box; max-height: 100%; place-content: center; align-items: center; -webkit-box-pack: center; -webkit-box-align: center;">
+            <div class="map" fxflex="50%" fxflex.sm="100%" fxflex.xs="100%" ng-reflect-flex="50%" ng-reflect-flex-sm="100%" ng-reflect-flex-xs="100%" style="flex: 1 1 50%; box-sizing: border-box; -webkit-box-flex: 1; max-width: 50%;">
+                <mat-card class="mat-card mat-card">
+                    <mat-card class="map-wrap mat-card mat-card">
+                        <div ng-reflect--address="[object Object]" ng-reflect--map-key="AIzaSyAikICJsiPALVjGfgXroTCCK_" ng-reflect--name="Nicolo&#39;s Pizza">
+                                <iframe allowfullscreen="" frameborder="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAikICJsiPALVjGfgXroTCCK_p14niTNpE&q=Nicolo's Pizza,1209 E 13th Ave,Denver,CO,80218" style="pointer-events: auto;"></iframe>
+                        </div>
+                    </mat-card>
+                    <p class="text-center">Click here to deactivate map actions</p>
+                </mat-card>
+            </div>
+
+            <div class="info" fxflex="50%" fxflex.sm="100%" fxflex.xs="100%" ng-reflect-flex="50%" ng-reflect-flex-sm="100%" ng-reflect-flex-xs="100%" style="flex: 1 1 50%; box-sizing: border-box; -webkit-box-flex: 1; max-width: 50%;">
+                <div ng-reflect--address="[object Object]" ng-reflect--name="Nicolo&#39;s Pizza" ng-reflect--phone="3038317000" ng-reflect--socials="[object Object],[object Object">
+                    <div fxlayout="row" fxlayoutalign="center center" fxlayoutwrap="wrap" ng-reflect-align="center center" ng-reflect-layout="row" ng-reflect-wrap="wrap" style="flex-flow: row wrap; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; box-sizing: border-box; max-height: 100%; place-content: center; align-items: center; -webkit-box-pack: center; -webkit-box-align: center;">
+                        <div class="phone" fxflex="100%" fxflex.md="50%" ng-reflect-flex="100%" ng-reflect-flex-md="50%" style="flex: 1 1 100%; box-sizing: border-box; -webkit-box-flex: 1; max-width: 100%;">
+                            <div class="contact-card">
+                                <h3>Phone Number</h3>
+
+                                <a aria-disabled="false" class="mat-raised-button" href="tel:3038317000" md-raised-button="" ng-reflect--action="3038317000" ng-reflect--section="ContactComponent" section="ContactComponent" tabindex="0">
+                                    <span class="mat-button-wrapper">
+                                        (303) 831 - 7000
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple" md-ripple="" ng-reflect-centered="false" ng-reflect-trigger="tel:3038317000"></div>  <div class="mat-button-focus-overlay"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="social-links" fxflex="100%" fxflex.md="50%" ng-reflect-flex="100%" ng-reflect-flex-md="50%" style="flex: 1 1 100%; box-sizing: border-box; -webkit-box-flex: 1; max-width: 100%;">
+                            <div class="contact-card">
+                                <h3>Get Connected</h3>
+                                <a aria-disabled="false" class="push-right mat-button" href="https://www.facebook.com/nicolospizza" md-button="" ng-reflect--action="Facebook" ng-reflect--section="ContactComponent" section="ContactComponent" tabindex="0" target="_blank">
+                                    <span class="mat-button-wrapper">
+                                        <i class="fa fa-facebook-official fa-3x"></i>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple" md-ripple="" ng-reflect-centered="false" ng-reflect-trigger="https://www.facebook.com/nicol"></div>  <div class="mat-button-focus-overlay"></div>
+                                </a><a aria-disabled="false" class="push-right mat-button" href="https://twitter.com/NicolosPizzaDen" md-button="" ng-reflect--action="Twitter" ng-reflect--section="ContactComponent" section="ContactComponent" tabindex="0" target="_blank">
+                                    <span class="mat-button-wrapper">
+                                        <i class="fa fa-twitter fa-3x"></i>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple" md-ripple="" ng-reflect-centered="false" ng-reflect-trigger="https://twitter.com/NicolosPiz"></div>  <div class="mat-button-focus-overlay"></div>
+                                </a><a aria-disabled="false" class="push-right mat-button" href="https://www.yelp.com/biz/nicolos-pizza-denver" md-button="" ng-reflect--action="Yelp" ng-reflect--section="ContactComponent" section="ContactComponent" tabindex="0" target="_blank">
+                                    <span class="mat-button-wrapper">
+                                        <i class="fa fa-yelp fa-3x"></i>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple" md-ripple="" ng-reflect-centered="false" ng-reflect-trigger="https://www.yelp.com/biz/nicol"></div>  <div class="mat-button-focus-overlay"></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="address" fxflex="100%" fxflex.md="50%" ng-reflect-flex="100%" ng-reflect-flex-md="50%" style="flex: 1 1 100%; box-sizing: border-box; -webkit-box-flex: 1; max-width: 100%;">
+                            <div class="contact-card">
+                                <h3>Address</h3>
+
+                                <div ng-reflect--address="[object Object]" ng-reflect--name="Nicolo&#39;s Pizza">
+                                    <a aria-disabled="false" class="mat-raised-button" href="https://www.google.com/maps/place/Nicolo&#39;s%20Pizza,1209%20E%2013th%20Ave,Denver,CO,80218" md-raised-button="" ng-reflect--action="Directions" ng-reflect--section="DirectionsLinkComponent" tabindex="0" target="_blank">
+                                        <div class="mat-button-wrapper">
+                                            <div ng-reflect--address="[object Object]">
+                                                <address>
+                                                    1209 E 13th Ave <br>
+                                                    Denver, CO 80218
+                                                </address>
+                                            </div>
+                                        </div>
+                                        <div class="mat-button-ripple mat-ripple" md-ripple="" ng-reflect-centered="false" ng-reflect-trigger="https://www.google.com/maps/pl"></div>  <div class="mat-button-focus-overlay"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div fxlayout="row" fxlayoutalign="center center" fxlayoutwrap="wrap" ng-reflect-align="center center" ng-reflect-layout="row" ng-reflect-wrap="wrap" style="flex-flow: row wrap; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; box-sizing: border-box; max-height: 100%; place-content: center; align-items: center; -webkit-box-pack: center; -webkit-box-align: center;">
+        <div fxflex="70%" fxflex.xs="100%" ng-reflect-flex="70%" ng-reflect-flex-xs="100%" style="flex: 1 1 70%; box-sizing: border-box; -webkit-box-flex: 1; max-width: 70%;">
+            <h3>Capital Hill Pizza Denver</h3>
+
+            <p details="">
+                Perfect for the Family, Happy Hour, or a Late Snack
+            </p>
+        </div>
+
+        <div fxflex="30%" fxflex.xs="100%" ng-reflect-flex="30%" ng-reflect-flex-xs="100%" style="flex: 1 1 30%; box-sizing: border-box; -webkit-box-flex: 1; max-width: 30%;">
+            <div insight-section="Footer" ng-reflect--insight-section="Footer">
+                <div class="fifty280">
+                    <a aria-disabled="false" class="mat-raised-button" f-insight="PoweredBy5280" href="http://www.5280software.com/" md-raised-button="" ng-reflect--action="PoweredBy5280" ng-reflect--link="http://www.5280software.com/" ng-reflect--section="Footer" tabindex="0" target="_blank">
+                        <span class="mat-button-wrapper">
+                            <img class="img-fluid" src="http://www.5280software.com/img/5280software.png">
+                            <br>
+                            <small>Powered by</small>
+                            <br>
+                            5280 Software
+                        </span>
+                        <div class="mat-button-ripple mat-ripple" md-ripple="" ng-reflect-centered="false" ng-reflect-trigger="http://www.5280software.com/"></div>  <div class="mat-button-focus-overlay"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	<!-- <script>window.ViewBag = {"CurrentAction":"Index","CurrentController":"DAF","UXRelease":"1.0.0","ApplicationID":"64a5da80-beda-4507-9456-36e1b1a05ccf"};</script>
+
+	<script>window.Google = {"Analytics":null,"Debug":false,"Fonts":null,"Icons":null,"MapKey":null};</script>
+
+		<script>window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+ga('create', '', 'auto');
+</script> -->
+<!-- 
+<script src="./menu_files/analytics.js.download"></script>
+
+    <script src="./menu_files/inline.318b50c57b4eba3d437b.bundle.js.download"></script>
+    <script src="./menu_files/polyfills.b1273f77bb85d18abe37.bundle.js.download"></script>
+    <script src="./menu_files/main.8974961573ff64d58007.bundle.js.download"></script> -->
+
+
